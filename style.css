@@ -1,0 +1,192 @@
+/* PALETA DE CORES (Light Academia / Rose)
+   Fundo: #FDFBF7 (Marfim claro)
+   Sidebar: #F5EBE6 (Bege suave)
+   Rosa Principal: #E8A7A1 (Rosa antigo)
+   Vermelho/Vinho: #8C2D38 (Bordô/Vinho)
+   Texto Escuro: #3A302E (Marrom profundo)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Bright", Georgia, serif;
+    background-color: #FDFBF7;
+    color: #3A302E;
+    height: 100vh;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* SIDEBAR STYLE */
+.sidebar {
+    width: 280px;
+    background-color: #F5EBE6;
+    border-right: 1px solid #EAD8D0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #E8A7A1;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+
+.profile-name {
+    font-size: 1.3rem;
+    color: #8C2D38;
+    font-weight: bold;
+}
+
+.profile-sub {
+    font-size: 0.85rem;
+    color: #8A7670;
+    margin-top: 4px;
+}
+
+.menu h3 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #8A7670;
+    margin-bottom: 15px;
+    padding-left: 10px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.nav-item {
+    padding: 12px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    color: #5C4D4A;
+    margin-bottom: 5px;
+}
+
+.nav-item:hover {
+    background-color: #E8A7A1;
+    color: #FFF;
+}
+
+.nav-item.active {
+    background-color: #8C2D38;
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* MAIN CONTENT STYLE */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+    background: linear-gradient(180deg, #FFF5F2 0%, #FDFBF7 40%);
+}
+
+.content-header {
+    border-bottom: 2px solid #F5EBE6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+#content-title {
+    font-size: 2.5rem;
+    color: #8C2D38;
+    margin-bottom: 10px;
+}
+
+#content-description {
+    font-size: 1rem;
+    color: #8A7670;
+    font-style: italic;
+}
+
+/* LISTAS EM ESTILO SPOTIFY */
+.spotify-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    padding: 15px 20px;
+    border-radius: 6px;
+    border: 1px solid #F0E4DF;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.list-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(140, 45, 56, 0.08);
+    border-color: #E8A7A1;
+}
+
+.item-index {
+    width: 30px;
+    font-weight: bold;
+    color: #E8A7A1;
+}
+
+.item-cover {
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.item-info h4 {
+    font-size: 1.1rem;
+    color: #3A302E;
+    margin-bottom: 4px;
+}
+
+.item-info p {
+    font-size: 0.9rem;
+    color: #8A7670;
+}
+
+/* GRID PARA O MOODBOARD */
+.moodboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.mood-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #EAD8D0;
+    transition: transform 0.3s;
+}
+
+.mood-img:hover {
+    transform: scale(1.03);
+}

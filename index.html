@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - Spotify Style</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; display: block; -webkit-user-select: none; margin: auto; background-color: hsl(0, 0%, 90%); transition: background-color 300ms;" src="https://mail.google.com/mail/u/0/?ui=2&amp;ik=f9859f2beb&amp;attid=0.1&amp;permmsgid=msg-f:1865630404206277915&amp;th=19e40cf7d4e2351b&amp;view=fimg&amp;disp=thd&amp;attbid=ANGjdJ-WqwC5rIJVCe53TJO-QPHvkUuVFS5b4Fm_SXtzQayUHS3k93HuTK1IWPXTIM6B0Dgmx4HmiIYVgirfGhLstwEBeyq9yuMfgO0wiir1xOWyAHn2iMTtvIPhbwY&amp;ats=2524608000000&amp;sz=w1366-h633&amp;auditContext=forDisplay">
+                <h2 class="profile-name">Anna Chagas</h2>
+                <p class="profile-sub">@giocchagas</p>
+            </div>
+
+            <nav class="menu">
+                <h3>Minhas Playlists</h3>
+                <ul>
+                    <li class="nav-item active" onclick="changeContent('hobbies')">𝜗ৎ Hobbies</li>
+                    <li class="nav-item" onclick="changeContent('musicas')">಄ Músicas Favoritas</li>
+                    <li class="nav-item" onclick="changeContent('livros')">‎ꫂ᭪݁ Livros Favoritos</li>
+                    <li class="nav-item" onclick="changeContent('inspiracoes')">ᯓ★ Inspirações</li>
+                    <li class="nav-item" onclick="changeContent('moodboard')">˖᯽ ݁˖  Moodboard</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h1 id="content-title">🎒 Hobbies</h1>
+                <p id="content-description">As atividades que preenchem meus dias e alimentam a alma.</p>
+            </header>
+
+            <section class="content-body" id="dynamic-content">
+                </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
